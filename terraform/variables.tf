@@ -42,13 +42,13 @@ variable "instance_type" {
 variable "vm_username" {
   description = "Username to create on the server"
   type        = string
-  default = "ubuntu"
+  default     = "ubuntu"
 }
 
 variable "vm_password" {
   description = "Password for that user"
   type        = string
-  default = "changeME"
+  default     = "changeME"
   sensitive   = true # hides the value in Terraform's screen output
 }
 
